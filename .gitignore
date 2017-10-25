@@ -4,3 +4,4 @@ node_modules
 *.psd
 *.sql
 *.csv
+package-lock.json
