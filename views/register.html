@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}
+注册用户
+{% endblock %}
+{% block content %}
+  <div class="container">
+    <h3 class="text-center">注册用户</h3>
+    <hr>
+    <form class="form" action="/register" method="post">
+      <div class="form-group">
+        <label for="username"></label>
+        <input class="form-control" type="text" required placeholder="用户名" name="username" id="username">
+      </div>
+      <div class="form-group">
+        <label for="password"></label>
+        <input class="form-control" type="password" required placeholder="密码" name="password" id="password">
+      </div>
+      <div class="form-group">
+        <label for="repassword"></label>
+        <input class="form-control" type="password" required placeholder="重复密码" name="repassword" id="repassword">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary btn-block">注册用户</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
